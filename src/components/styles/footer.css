@@ -1,0 +1,19 @@
+.footer-container {
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  background-color: #000;
+}
+
+.footer-container div {
+  display: flex;
+}
+
+
+.footer-container a {
+  text-decoration: none;
+  color: white;
+}

@@ -1,0 +1,40 @@
+.home-container {
+  width: 100vw;
+  min-height: calc(100vh - 117px);
+  text-align: center;
+  background-color: black;
+}
+
+.home-landing {
+  height: calc(100vh - 50px);
+  background-position: center;
+}
+
+.name {
+  text-shadow: 0 0 6px #fff, 0 0 20px #00e8fc, 0 0 30px #00e8fc, 0 0 40px #00e8fc, 0 0 50px #0075a2, 0 0 60px #0075a2, 0 0 70px #0075a2;
+  font-size: 45px;
+  padding-top: 35vh;
+}
+
+.descriptors {
+  padding-top: 10;
+  font-weight: lighter;
+  text-shadow: 0 0 10px #fff, 0 0 20px #473bf0, 0 0 30px #473bf0, 0 0 40px #473bf0, 0 0 50px #0075a2, 0 0 60px #0075a2, 0 0 70px #0075a2;
+}
+
+.loading-icon {
+  animation-name: loading;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes loading {
+  from {
+    width: 25px;
+  }
+  to {
+    width: 50px;
+  }
+}
