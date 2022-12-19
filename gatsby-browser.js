@@ -3,5 +3,10 @@
  *
  * See: https://www.gatsbyjs.com/docs/browser-apis/
  */
-
-// You can delete this file if you're not using it
+exports.shouldUpdateScroll = ({ routerProps: { location } }) => {
+  if (location.hash) {
+    return true
+  }
+  window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+  return false
+}

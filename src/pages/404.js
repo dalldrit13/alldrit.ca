@@ -8,24 +8,20 @@ import { Link } from 'gatsby'
 import Wrapper from "../layouts";
 
 // Images
-import Galaxy from "../images/stars.jpeg";
+import Stars from "../images/stars4.jpeg";
 
 // Stylesheets
-import "../styles/home.css";
 
 export default function Index() {
   return (
     <Wrapper>
-      <div className="home-container">
+      <div className="landing-container">
         <div
-          className="home-landing"
-          style={{
-            backgroundImage: "url(" + Galaxy + ")",
-            backgroundSize: "cover",
-          }}
+          className="landing"
+          style={{ background: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${Stars})` }}
         >
-          <div className="title name">Page Not Found</div>
-          <Link className="subtitle descriptors" to="/">
+          <div className="title teal-glow">Page Not Found</div>
+          <Link className="subtitle blue-glow" to="/">
             Home
           </Link>
         </div>

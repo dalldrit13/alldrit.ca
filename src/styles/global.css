@@ -1,25 +1,209 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=VT323&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+}
 
 body {
+  background-color: #121111;
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'VT323', sans-serif;
   color: #ffffff;
-  margin: 0;
   overflow-x: hidden;
+}
+
+main {
+  min-height: calc(100vh - 50px);
 }
 
 a {
   text-decoration: none;
+  color: inherit;
+  width: fit-content;
+}
+
+p { 
+  line-height: 1.8;
+}
+
+a > button {
+  color: #121111;
+}
+
+button {
+  position: relative;
+  font-family: 'VT323', sans-serif;
+  border: none;
+  background-color: #fff;
+  font-size: 18px;
+  padding: 5px 25px;
+  cursor: pointer;
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -o-crisp-edges; /* Opera */
+  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+  
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 15px;
+  -moz-border-image: url(/btnpxl.png) 20 stretch;
+  -webkit-border-image: url(/btnpxl.png) 20 stretch;
+  -o-border-image: url(/btnpxl.png) 20 stretch;
+  border-image: url(/btnpxl.png) 10 stretch;
+}
+
+button:active {
+  top: 2px;
+}
+
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  text-align: center;
+  background-color: black;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+  margin: auto;
+}
+
+.arrow {
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  bottom: 120px;
+  margin-top: 60px;
+  animation: bounce 1.3s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  from {
+    bottom: 120px;
+  }
+  50% {
+    bottom: 110px;
+  }
+  to {
+    bottom: 120px;
+  }
+}
+
+.rocket {
+  transition: all 1.6s ease;
+  position: fixed;
+  bottom: -130px;
+  right: 20px;
+  width: 90px;
+}
+.scrolled .rocket {
+  bottom: 30px;
+}
+
+
+.sidebyside {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  height: auto;
+  min-height: 60vh;
+  max-width: 70vw;
+}
+
+.sidebyside > div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.sidebyside > img {
+  transition: all 2s ease;
+  border-radius: 12px;
+  width: 35vw;
+}
+.sidebyside > img:active {
+  transform: scale(1.8);
 }
 
 .title {
   color: white;
   font-weight: bold;
-  font-size: 28px;
-  line-height: 2;
+  font-size: 45px;
+  line-height: 1.3;
+  margin: 10px 0;
 }
 
 .subtitle {
   color: #d0d0d0;
   font-size: 20px;
+}
+
+.chips {
+  display: flex;
+  gap: 20px;
+}
+
+.chip {
+  box-shadow: 0 0 3px #fff, 0 0 6px #473bf0, 0 0 9px #473bf0, 0 0 12px #473bf0;
+  border-radius: 25px;
+  padding: 10px 15px;
+}
+
+.teal-glow {
+  text-shadow: 0 0 3px #fff, 0 0 20px #00e8fc, 0 0 30px #00e8fc, 0 0 40px #00e8fc, 0 0 50px #0075a2, 0 0 60px #0075a2, 0 0 70px #0075a2;
+}
+
+.blue-glow {
+  text-shadow: 0 0 10px #fff, 0 0 20px #473bf0, 0 0 30px #473bf0, 0 0 40px #473bf0, 0 0 50px #0075a2, 0 0 60px #0075a2, 0 0 70px #0075a2;
+}
+
+@media (max-width: 900px) {
+  .sidebyside {
+    flex-direction: column;
+    padding: 10vh 0;
+    min-height: 70vh;
+    max-width: 95vw;
+  }
+  .sidebyside > div {
+    max-width: 90vw;
+    text-align: center;
+    align-items: center;
+  }
+  .sidebyside > img {
+    width: 100%;
+  }
+  .sidebyside > img:active {
+    transform: scale(1);
+  }  
+  .reverse-stack {
+    flex-direction: column-reverse;
+  }  
+}
+
+
+@media (max-width: 600px) {
+  .teal-glow {
+    text-shadow: 0 0 1px #fff, 0 0 5px #00e8fc, 0 0 10px #00e8fc, 0 0 15px #00e8fc, 0 0 20px #0075a2, 0 0 25px #0075a2, 0 0 30px #0075a2;
+  }
 }

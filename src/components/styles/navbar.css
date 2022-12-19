@@ -1,0 +1,40 @@
+.nav-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-interior {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  max-width: 1200px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-container a {
+  color: #fff;
+  font-size: 30px;
+}
+
+@media (max-width: 600px) {
+  .nav-interior {
+    margin-left: -15px;
+    width: 90%;
+  }
+  .nav-container a {
+    font-size: 16px;
+  }
+}
