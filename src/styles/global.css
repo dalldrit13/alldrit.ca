@@ -161,6 +161,7 @@ button:active {
 
 .chips {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -198,7 +199,10 @@ button:active {
   }  
   .reverse-stack {
     flex-direction: column-reverse;
-  }  
+  }
+  .chips {
+    justify-content: center;
+  }
 }
 
 

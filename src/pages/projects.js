@@ -46,24 +46,37 @@ export default function Projects() {
         </section>
         <div id="fardown">
           <section className="landing sidebyside reverse-stack">
-            <img src="/images/sisterverse_game.png" alt="Sisterverse Game Screenshot" loading="lazy" />
+            <img src="/images/sisterverse.gif" alt="Sisterverse Game Screenshot" loading="lazy" />
             <div>
-              <h1 className="title">Sisterverse Platform & Game</h1>
+              <h1 className="title">Sisterverse</h1>
               <p className="subtitle">
                 The SolSisters is a popular female led NFT project on the Solana 
-                blockchain. They came to us to develop a fully interactive 3d platform 
-                for their holders to interact with as well as a 16bit style object avoidance game.
-                The platforms integrate with web3 technologies and a myriad of different paradigms  
-                for interactive web rendering.
+                blockchain. The Sisterverse is an interactive 3D platform for holders 
+                to show off their collection and complete missions in the paired game.
               </p>
               <div className="chips">
                 <a className="chip" href="https://sisterverse.xyz" target="_blank" rel="noreferrer">solsisters.xyz</a>
                 <a className="chip" href="https://sisterverse.xyz" target="_blank" rel="noreferrer">sisterverse.xyz</a>
-                <a className="chip" href="https://game.sisterverse.xyz" target="_blank" rel="noreferrer">game.sisterverse.xyz</a>
               </div>
             </div>
           </section>
           <section className="landing sidebyside">
+            <div>
+              <h1 className="title">Sisterverse Game</h1>
+              <p className="subtitle">
+                A 16bit style, object avoidance game with 5 different worlds tied to 
+                the Sisterverse. Players must hold a SolSister token in their wallet 
+                and can play as one of their SolSisters, earning boosts from different 
+                traits.
+              </p>
+              <div className="chips">
+                <a className="chip" href="https://game.sisterverse.xyz" target="_blank" rel="noreferrer">game.sisterverse.xyz</a>
+              </div>
+            </div>
+            <img src="/images/sisterverse_game.png" alt="Sisterverse Game Screenshot" loading="lazy" />
+          </section>
+          <section className="landing sidebyside reverse-stack">
+            <img src="/images/uptrend.png" alt="" loading="lazy" />
             <div>
               <h1 className="title">UpTrend</h1>
               <p className="subtitle">
@@ -76,10 +89,8 @@ export default function Projects() {
                 <a className="chip" href="https://beta.uptrendapp.io" target="_blank" rel="noreferrer">beta.uptrendapp.io</a>
               </div>
             </div>
-            <img src="/images/uptrend.png" alt="" loading="lazy" />
           </section>
-          <section className="landing sidebyside reverse-stack">
-            <img src="/images/netcv.png" alt="Codey landing page screenshot" loading="lazy" />
+          <section className="landing sidebyside">
             <div>
               <h1 className="title">NetCV</h1>
               <p className="subtitle">
@@ -89,8 +100,10 @@ export default function Projects() {
                 <a className="chip" href="https://netcv.io" target="_blank" rel="noreferrer">netcv.io</a>
               </div>
             </div>
+            <img src="/images/netcv.png" alt="Codey landing page screenshot" loading="lazy" />
           </section>
-          <section className="landing sidebyside">
+          <section className="landing sidebyside reverse-stack">
+            <img src="/images/codey.png" alt="Codey landing page screenshot" loading="lazy" />
             <div>
               <h1 className="title">Codey</h1>
               <p className="subtitle">
@@ -101,10 +114,8 @@ export default function Projects() {
                 <a className="chip" href="https://thecodey.com" target="_blank" rel="noreferrer">thecodey.com</a>
               </div>
             </div>
-            <img src="/images/codey.png" alt="Codey landing page screenshot" loading="lazy" />
           </section>
-          <section className="landing sidebyside reverse-stack">
-            <img src="/images/bet99.png" alt="Bet 99 affiliates site screenshot" loading="lazy" />
+          <section className="landing sidebyside">
             <div>
               <h1 className="title">BET99</h1>
               <p className="subtitle">
@@ -114,8 +125,10 @@ export default function Projects() {
                 <a className="chip" href="https://bet99affiliates.com" target="_blank" rel="noreferrer">bet99affiliates.com</a>
               </div>
             </div>
+            <img src="/images/bet99.png" alt="Bet 99 affiliates site screenshot" loading="lazy" />
           </section>
-          <section className="landing sidebyside">
+          <section className="landing sidebyside reverse-stack">
+            <img src="/images/soldarity.gif" alt="Soldarity Coming Soon Page" loading="lazy" />
             <div>
               <h1 className="title">Soldarity</h1>
               <p className="subtitle">
@@ -130,7 +143,6 @@ export default function Projects() {
                 <a className="chip" href="https://soldarity.com" target="_blank" rel="noreferrer">soldarity.com</a>
               </div>
             </div>
-            <img src="/images/soldarity.gif" alt="Soldarity Coming Soon Page" loading="lazy" style={{ width: 600 }} />
           </section>
           <section className="landing sidebyside">
             <div>
