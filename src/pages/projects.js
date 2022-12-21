@@ -55,7 +55,7 @@ export default function Projects() {
                 to show off their collection and complete missions in the paired game.
               </p>
               <div className="chips">
-                <a className="chip" href="https://sisterverse.xyz" target="_blank" rel="noreferrer">solsisters.xyz</a>
+                <a className="chip" href="https://solsisters.xyz" target="_blank" rel="noreferrer">solsisters.xyz</a>
                 <a className="chip" href="https://sisterverse.xyz" target="_blank" rel="noreferrer">sisterverse.xyz</a>
               </div>
             </div>

@@ -12,6 +12,8 @@ export default function Wrapper(props) {
         <title>Alldrit Tech | Make your dream a reality</title>
         <meta name="description" content="Hello World! My name is Devin and I'm a computer engineer, founder of a company, singer song writer and I'm trying to change the world one line of code at a time." />
         <link rel="icon" type="image/svg+xml" href="/images/logo.png" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SD0KB8V7DW" />
+        <script src="/gtag.js" />
       </Helmet>
       <Navbar />
         <main>
