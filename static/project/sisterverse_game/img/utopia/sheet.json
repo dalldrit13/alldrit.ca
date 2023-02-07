@@ -1,0 +1,148 @@
+{"frames": [
+
+{
+	"filename": "alien_ship.png",
+	"frame": {"x":957,"y":55,"w":37,"h":31},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":3,"w":37,"h":31},
+	"sourceSize": {"w":37,"h":37}
+},
+{
+	"filename": "asteroid.png",
+	"frame": {"x":803,"y":1,"w":152,"h":127},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":19,"w":152,"h":127},
+	"sourceSize": {"w":160,"h":160}
+},
+{
+	"filename": "explosion-0.png",
+	"frame": {"x":991,"y":114,"w":17,"h":17},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":39,"y":43,"w":17,"h":17},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "explosion-1.png",
+	"frame": {"x":957,"y":1,"w":52,"h":52},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":21,"y":26,"w":52,"h":52},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "explosion-2.png",
+	"frame": {"x":803,"y":296,"w":65,"h":67},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":17,"w":65,"h":67},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "explosion-3.png",
+	"frame": {"x":803,"y":365,"w":65,"h":66},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":17,"w":65,"h":66},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "explosion-4.png",
+	"frame": {"x":803,"y":216,"w":80,"h":78},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":8,"w":80,"h":78},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "explosion-5.png",
+	"frame": {"x":803,"y":130,"w":82,"h":84},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":5,"w":82,"h":84},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "explosion-6.png",
+	"frame": {"x":887,"y":130,"w":85,"h":81},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":4,"w":85,"h":81},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "explosion-7.png",
+	"frame": {"x":887,"y":213,"w":84,"h":79},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":4,"w":84,"h":79},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "explosion-8.png",
+	"frame": {"x":885,"y":294,"w":83,"h":75},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":4,"w":83,"h":75},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "explosion-9.png",
+	"frame": {"x":803,"y":433,"w":82,"h":69},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":2,"w":82,"h":69},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "explosion-10.png",
+	"frame": {"x":887,"y":371,"w":81,"h":66},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":1,"w":81,"h":66},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "explosion-11.png",
+	"frame": {"x":887,"y":439,"w":81,"h":64},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":0,"w":81,"h":64},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "leaf.png",
+	"frame": {"x":991,"y":88,"w":18,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":24},
+	"sourceSize": {"w":18,"h":24}
+},
+{
+	"filename": "red.png",
+	"frame": {"x":957,"y":88,"w":32,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32}
+},
+{
+	"filename": "stars.jpeg",
+	"frame": {"x":1,"y":1,"w":800,"h":511},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":800,"h":511},
+	"sourceSize": {"w":800,"h":511}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "sheet.png",
+	"format": "RGBA8888",
+	"size": {"w":1010,"h":513},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:0a7eaf8b756c5e90acc54bc918051553:ae06e418065d953f1079ae23e19ac718:9c44ecd7e9a522007eaff2949095bc1d$"
+}
+}

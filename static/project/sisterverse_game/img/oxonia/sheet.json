@@ -1,0 +1,220 @@
+{"frames": [
+
+{
+	"filename": "explosion-0.png",
+	"frame": {"x":1123,"y":360,"w":38,"h":38},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":19,"w":38,"h":38},
+	"sourceSize": {"w":80,"h":80}
+},
+{
+	"filename": "explosion-1.png",
+	"frame": {"x":1163,"y":381,"w":38,"h":38},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":19,"w":38,"h":38},
+	"sourceSize": {"w":80,"h":80}
+},
+{
+	"filename": "explosion-2.png",
+	"frame": {"x":1123,"y":308,"w":48,"h":50},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":12,"w":48,"h":50},
+	"sourceSize": {"w":80,"h":80}
+},
+{
+	"filename": "explosion-3.png",
+	"frame": {"x":1123,"y":248,"w":62,"h":58},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":9,"w":62,"h":58},
+	"sourceSize": {"w":80,"h":80}
+},
+{
+	"filename": "explosion-4.png",
+	"frame": {"x":1123,"y":184,"w":65,"h":62},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":7,"w":65,"h":62},
+	"sourceSize": {"w":80,"h":80}
+},
+{
+	"filename": "explosion-5.png",
+	"frame": {"x":1123,"y":117,"w":66,"h":65},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":5,"w":66,"h":65},
+	"sourceSize": {"w":80,"h":80}
+},
+{
+	"filename": "explosion-6.png",
+	"frame": {"x":1123,"y":45,"w":69,"h":70},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":3,"w":69,"h":70},
+	"sourceSize": {"w":80,"h":80}
+},
+{
+	"filename": "hole.png",
+	"frame": {"x":1187,"y":248,"w":16,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+	"sourceSize": {"w":16,"h":16}
+},
+{
+	"filename": "ice0.png",
+	"frame": {"x":1187,"y":266,"w":16,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+	"sourceSize": {"w":16,"h":16}
+},
+{
+	"filename": "ice1.png",
+	"frame": {"x":1187,"y":284,"w":16,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+	"sourceSize": {"w":16,"h":16}
+},
+{
+	"filename": "ice2.png",
+	"frame": {"x":1187,"y":302,"w":16,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+	"sourceSize": {"w":16,"h":16}
+},
+{
+	"filename": "ice3.png",
+	"frame": {"x":1176,"y":455,"w":16,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+	"sourceSize": {"w":16,"h":16}
+},
+{
+	"filename": "ice4.png",
+	"frame": {"x":1176,"y":473,"w":16,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+	"sourceSize": {"w":16,"h":16}
+},
+{
+	"filename": "poof-0.png",
+	"frame": {"x":1157,"y":455,"w":17,"h":18},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":6,"w":17,"h":18},
+	"sourceSize": {"w":32,"h":32}
+},
+{
+	"filename": "poof-1.png",
+	"frame": {"x":1173,"y":353,"w":23,"h":26},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":2,"w":23,"h":26},
+	"sourceSize": {"w":32,"h":32}
+},
+{
+	"filename": "poof-2.png",
+	"frame": {"x":1173,"y":320,"w":29,"h":31},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":0,"w":29,"h":31},
+	"sourceSize": {"w":32,"h":32}
+},
+{
+	"filename": "poof-3.png",
+	"frame": {"x":1159,"y":421,"w":32,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32}
+},
+{
+	"filename": "poof-4.png",
+	"frame": {"x":1123,"y":430,"w":32,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32}
+},
+{
+	"filename": "ripsaw.png",
+	"frame": {"x":1123,"y":1,"w":80,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":42},
+	"sourceSize": {"w":80,"h":42}
+},
+{
+	"filename": "rock0.png",
+	"frame": {"x":1123,"y":464,"w":16,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+	"sourceSize": {"w":16,"h":16}
+},
+{
+	"filename": "rock1.png",
+	"frame": {"x":1141,"y":475,"w":16,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+	"sourceSize": {"w":16,"h":16}
+},
+{
+	"filename": "rock2.png",
+	"frame": {"x":1123,"y":482,"w":16,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+	"sourceSize": {"w":16,"h":16}
+},
+{
+	"filename": "rock3.png",
+	"frame": {"x":1159,"y":491,"w":16,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+	"sourceSize": {"w":16,"h":16}
+},
+{
+	"filename": "snow.png",
+	"frame": {"x":1194,"y":45,"w":2,"h":2},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":2,"h":2},
+	"sourceSize": {"w":2,"h":2}
+},
+{
+	"filename": "snow_map_small.png",
+	"frame": {"x":1,"y":1,"w":1120,"h":640},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1120,"h":640},
+	"sourceSize": {"w":1120,"h":640}
+},
+{
+	"filename": "wood.png",
+	"frame": {"x":1123,"y":400,"w":34,"h":28},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":28},
+	"sourceSize": {"w":34,"h":29}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "sheet.png",
+	"format": "RGBA8888",
+	"size": {"w":1204,"h":642},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:ea0e0f47cf284f7482eea2877743fecd:dc4102492fda9b8b739dd653d8d91a05:9c44ecd7e9a522007eaff2949095bc1d$"
+}
+}

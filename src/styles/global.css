@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: #121111;
+  background-color: black;
   text-decoration: none;
   font-family: 'VT323', sans-serif;
   color: #ffffff;
@@ -69,7 +69,6 @@ button:active {
   align-items: center;
   width: 100vw;
   text-align: center;
-  background-color: black;
 }
 
 .landing {

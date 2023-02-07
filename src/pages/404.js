@@ -8,7 +8,6 @@ import { Link } from 'gatsby'
 import Wrapper from "../layouts";
 
 // Images
-import Stars from "../images/stars4.jpeg";
 
 // Stylesheets
 
@@ -18,7 +17,7 @@ export default function Index() {
       <div className="landing-container">
         <div
           className="landing"
-          style={{ background: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${Stars})` }}
+          style={{ background: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(/images/stars4.jpeg)` }}
         >
           <div className="title teal-glow">Page Not Found</div>
           <Link className="subtitle blue-glow" to="/">

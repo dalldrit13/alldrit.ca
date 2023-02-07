@@ -1,5 +1,5 @@
 {
-  "name": "Alldrit.ca",
+  "name": "alldrit.ca",
   "version": "1.0.0",
   "private": true,
   "description": "Alldrit.ca site",
@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gatsby build && aws s3 sync public/ s3://alldrit --delete --exclude .DS_Store"
   },
   "license": "0BSD",
   "dependencies": {
@@ -22,6 +23,7 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "gatsby-plugin-sitemap": "^6.3.1",
     "prettier": "^2.8.1"
   }
 }

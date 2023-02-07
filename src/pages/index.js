@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "gatsby";
+import { Helmet } from "react-helmet";
 
 // Functional Libraries
 import useRocket from "../hooks/useRocket";
@@ -10,7 +11,6 @@ import useRocket from "../hooks/useRocket";
 import Wrapper from "../layouts";
 
 // Images
-import Stars from "../images/stars.jpeg";
 
 // Stylesheets
 
@@ -19,10 +19,14 @@ export default function Index() {
 
   return (
     <Wrapper>
+      <Helmet>
+        <title>Alldrit Tech | Make your dream a reality</title>
+        <meta name="og:title" content="Alldrit Tech | Make your dream a reality" />
+      </Helmet>
       <div className="landing-container">
         <section
           className="landing"
-          style={{ background: `radial-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0)), url(${Stars})` }}
+          style={{ background: `radial-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0)), url(/images/stars.jpeg)` }}
         >
           <h1 className="title teal-glow">Alldrit Tech</h1>
           <p className="subtitle  blue-glow">
@@ -46,7 +50,7 @@ export default function Index() {
           <div>
             <h1 className="title">Our Work</h1>
             <p className="subtitle">From interactive 3d blockchain platforms to corporate audit software to Slack 
-            apps, we do it all! Curious if we can build out your idea? Setup a free consultation by emailing devin@alldrit.ca</p>
+            apps, we do it all! Curious if we can build out your idea? Setup a free consultation by emailing info@alldrit.ca</p>
             <Link to="/projects"><button>Projects</button></Link>
           </div>
         </section>

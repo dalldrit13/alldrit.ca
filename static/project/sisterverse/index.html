@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/project/sisterverse/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="The Sisterverse Collection comprises unique hexagonal NFTs that fit together to build the online home of the SolSisters."
+    />
+    <link rel="apple-touch-icon" href="/project/sisterverse/logo192.png" />
+    <link rel="manifest" href="/project/sisterverse/manifest.json" />
+    <title>The Sisterverse</title>
+    <!--Dexie indexed db-->
+    <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
+    <!--Three js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XDZP6VXDKH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XDZP6VXDKH');
+    </script>
+    <script type="module" crossorigin src="/project/sisterverse/assets/index.d5efe30f.js"></script>
+    <link rel="stylesheet" href="/project/sisterverse/assets/index.8c96fcbc.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="message" class="message"></div>
+    <button id="back-button" class="back-button wallet-adapter-button wallet-adapter-button-trigger" style="display:none">Back</button>
+    
+    <canvas id="sisterverse_canvas" style="z-index:-10"></canvas>
+    
+    <div id="twitter_modal" style="display:none" class="twitter_modal">
+      <img id="twitter_close" class="twitter_close" src="icons/close_dark.png">
+      <h1>Congratulations!</h1>
+      <p id="twitter_text"></p>
+      <canvas id="twitter_canvas"></canvas>
+      <button id="twitter_download" class="wallet-adapter-button wallet-adapter-button-trigger">Download</button>
+    </div>
+    <!--Polyfills for web3-->
+    <script>var global = globalThis</script>
+    
+    <!--App-->
+    
+  </body>
+</html>
