@@ -10,7 +10,7 @@ export default function Wrapper(props) {
       <Helmet>
         <meta charSet="utf-8" />
         <meta name="description" content="Alldrit Tech is a Canadian company that provides web and app development, consulting, and hosting services to help businesses succeed. Contact us to learn more about how we can support your business." />
-        <meta name="description" content="Alldrit Tech is a Canadian company that provides web and app development, consulting, and hosting services to help businesses succeed. Contact us to learn more about how we can support your business." />
+        <meta name="og:description" content="Alldrit Tech is a Canadian company that provides web and app development, consulting, and hosting services to help businesses succeed. Contact us to learn more about how we can support your business." />
         <meta name="og:type" content="website" />
         <meta name="og:image" content="/images/stars.jpeg" />
         <link rel="icon" type="image/svg+xml" href="/images/logo.png" />

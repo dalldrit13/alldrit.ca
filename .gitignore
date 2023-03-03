@@ -71,3 +71,6 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 example_projects
+
+# Sisterverse Game Assets
+static/project/sisterverse_game/img/*/assets

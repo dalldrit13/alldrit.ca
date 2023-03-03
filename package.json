@@ -1,9 +1,8 @@
 {
   "name": "alldrit.ca",
   "version": "1.0.0",
-  "private": true,
   "description": "Alldrit.ca site",
-  "author": "Devin Alldrit",
+  "author": "Devin Alldrit <devin@aldrit.ca>",
   "keywords": [
     "gatsby"
   ],
