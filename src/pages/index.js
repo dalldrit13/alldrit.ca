@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
 
@@ -32,7 +32,7 @@ export default function Index() {
           <p className="subtitle  blue-glow">
             Making Dreams Reality
           </p>
-          <a href="#overview"><img className="arrow" src="/images/arrow.png" style={{ width: 30 }} /></a>
+          <a href="#overview"><img className="arrow" src="/images/arrow.png" style={{ width: 30 }} alt="scroll down" /></a>
         </section>
       </div>
       <section id="overview" className="landing sidebyside">

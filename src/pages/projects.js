@@ -27,7 +27,7 @@ export default function Projects() {
           <h1 className="title teal-glow">Projects</h1>
           <p className="subtitle blue-glow">See What We Can Do</p>
           <a href="#project1">
-            <img className="arrow" src="/images/arrow.png" style={{ width: 30 }} />
+            <img className="arrow" src="/images/arrow.png" style={{ width: 30 }} alt="Scroll down" />
           </a>
         </div>
         <section id="project1" className="landing sidebyside">
@@ -83,7 +83,7 @@ export default function Projects() {
             <img src="/images/sisterverse_game.png" alt="Sisterverse Game Screenshot" loading="lazy" />
           </section>
           <section className="landing sidebyside reverse-stack">
-            <img src="/images/uptrend.png" alt="" loading="lazy" />
+            <img src="/images/uptrend.png" alt="UpTrend screenshot" loading="lazy" />
             <div>
               <h1 className="title">UpTrend</h1>
               <p className="subtitle">

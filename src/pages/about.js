@@ -28,7 +28,7 @@ export default function About() {
           <h1 className="title teal-glow">About</h1>
           <p className="subtitle blue-glow">Software Simplified</p>
           <a href="#about">
-            <img className="arrow" src="/images/arrow.png" style={{ width: 30 }} />
+            <img className="arrow" src="/images/arrow.png" style={{ width: 30 }} alt="scroll down" />
           </a>
         </div>
         <section id="about" className="landing sidebyside">
@@ -36,7 +36,7 @@ export default function About() {
             <h1 className="title">We Do It All</h1>
             <p className="subtitle">
               Alldrit Technologies is owned by Devin Alldrit, ex-founder/CTO of a recently acquired tech startup:&nbsp;
-              <a href="https://afino.io" target="_blank" rel="roreferrer" style={{ textDecoration: 'underline' }}>
+              <a href="https://afino.io" target="_blank" rel="noreferrer" style={{ textDecoration: 'underline' }}>
                 Afino.io
               </a>
               .

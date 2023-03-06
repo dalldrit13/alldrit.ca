@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <div id="nav" className="nav-container">
       <div className="nav-interior">
-        <Link to="/"><img src="/images/logo.png" className="logo" /></Link>
+        <Link to="/"><img src="/images/logo.png" className="logo" alt="Alldrit Tech Logo" /></Link>
         <div className="nav-links">
           <Link className={location.pathname.includes("/about") ? "blue-glow" : ""} to="/about">About</Link>
           <Link className={location.pathname.includes("/projects") ? "blue-glow" : ""} to="/projects">Projects</Link>

@@ -22,7 +22,7 @@ export default function Wrapper(props) {
         <main>
          {props.children}
         </main>
-        <a href="#nav"><img src="/images/rocket.gif" className="rocket" loading="lazy" /></a>
+        <a href="#nav"><img src="/images/rocket.gif" className="rocket" loading="lazy" alt="scroll up" /></a>
       <Footer />
     </>
   );
