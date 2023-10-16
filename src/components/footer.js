@@ -1,9 +1,9 @@
-import React from "react"
+import React from 'react'
 
 // Images/Icons
 
 // Stylesheets
-import "./styles/footer.css"
+import './styles/footer.css'
 
 export default function Footer() {
   return (
