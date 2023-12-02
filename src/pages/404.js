@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react'
 import { Link } from 'gatsby'
 // Functional Libraries
 
 // Constants
 
 // Components
-import Wrapper from "../layouts";
+import Wrapper from '../layouts'
 
 // Images
 
@@ -14,12 +14,11 @@ import Wrapper from "../layouts";
 export default function Index() {
   return (
     <Wrapper>
-      <div className="landing-container">
-        <div
-          className="landing"
-          style={{ background: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(/images/stars4.jpeg)` }}
-        >
-          <div className="title teal-glow">Page Not Found</div>
+      <div className="landing-container" data-testid="404-container">
+        <div className="landing" style={{ background: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(/images/stars4.jpeg)` }}>
+          <div className="title teal-glow" data-testid="notfound-text">
+            Page Not Found
+          </div>
           <Link className="subtitle blue-glow" to="/">
             Home
           </Link>

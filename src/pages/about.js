@@ -23,7 +23,7 @@ export default function About() {
         <title>Alldrit Tech | About Us</title>
         <meta name="og:title" content="Alldrit Tech | About Us" />
       </Helmet>
-      <div className="landing-container">
+      <div className="landing-container" data-testid="about-container">
         <div className="landing" style={{ background: `radial-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.1)), url(/images/stars5.jpeg)` }}>
           <h1 className="title teal-glow">About</h1>
           <p className="subtitle blue-glow">Software Simplified</p>
@@ -54,7 +54,7 @@ export default function About() {
             <div>
               <h1 className="title">Free Consultation</h1>
               <p className="subtitle">
-                Reach out with a brief summary of what your looking for and we'll setup a quick call to see if it's something we can do
+                Reach out with a brief summary of what your looking for and we&apos;ll setup a quick call to see if it&apos;s something we can do
               </p>
               <Link to="/contact">
                 <button>Contact</button>

@@ -7,23 +7,39 @@
     "gatsby"
   ],
   "scripts": {
+    "prepare": "husky install",
+    "lint": "eslint . && prettier --check .",
+    "lint:diff": "git diff --name-only --cached --diff-filter=ACMRTUXB | grep .js | xargs -r eslint",
+    "prettier:diff": "git diff --name-only --cached --diff-filter=ACMRTUXB | grep .js | xargs -r prettier --check",
+    "fmt": "prettier --write .",
     "dev": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && aws s3 sync public/ s3://alldrit --delete --exclude .DS_Store"
+    "deploy": "gatsby build && aws s3 sync public/ s3://alldrit --delete --exclude .DS_Store",
+    "test": "jest"
   },
   "license": "0BSD",
   "dependencies": {
-    "gatsby": "^5.3.2",
+    "@testing-library/jest-dom": "^6.1.5",
+    "gatsby": "^5.12.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "@testing-library/react": "^14.1.2",
+    "babel-jest": "^29.7.0",
+    "babel-preset-gatsby": "^3.12.1",
     "eslint": "^7.32.0",
+    "eslint-plugin-jest": "^24.7.0",
+    "eslint-plugin-react": "^7.33.2",
     "gatsby-plugin-sitemap": "^6.3.1",
+    "husky": "^8.0.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "prettier": "^2.8.1"
   }
 }

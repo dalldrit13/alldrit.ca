@@ -8,7 +8,7 @@ export default function Navbar() {
   const location = useLocation()
 
   return (
-    <div id="nav" className="nav-container">
+    <div id="nav" data-testid="navbar" className="nav-container">
       <div className="nav-interior">
         <Link to="/">
           <img src="/images/logo.png" className="logo" alt="Alldrit Tech Logo" />
