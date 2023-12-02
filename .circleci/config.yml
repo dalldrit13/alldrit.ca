@@ -9,17 +9,20 @@ jobs:
     # Specify the execution environment. You can specify an image from Docker Hub or use one of our convenience images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/configuration-reference/#executor-job
     docker:
-      - image: cimg/base:stable
+      - image: cimg/node:21.2.0
     # Add steps to the job
     # See: https://circleci.com/docs/configuration-reference/#steps
     steps:
       - checkout
       - run:
-          name: "Lint"
-          command: "npm run lint"
+          name: Install deps
+          command: npm install --ignore-scripts
       - run:
-          name: "Test"
-          command: "npm test"
+          name: Lint
+          command: npm run lint
+      - run:
+          name: Run tests
+          command: npm test
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
