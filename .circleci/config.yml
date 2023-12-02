@@ -19,11 +19,11 @@ jobs:
           command: "npm run lint"
       - run:
           name: "Test"
-          command: "npm run test"
+          command: "npm test"
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
 workflows:
-  say-hello-workflow:
+  run-tests:
     jobs:
       - test-frontend

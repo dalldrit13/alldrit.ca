@@ -7,7 +7,10 @@
     "gatsby"
   ],
   "scripts": {
+    "prepare": "husky install",
     "lint": "eslint . && prettier --check .",
+    "lint:diff": "git diff --name-only --cached --diff-filter=ACMRTUXB | grep .js | xargs -r eslint",
+    "prettier:diff": "git diff --name-only --cached --diff-filter=ACMRTUXB | grep .js | xargs -r prettier --check",
     "fmt": "prettier --write .",
     "dev": "gatsby develop",
     "start": "gatsby develop",

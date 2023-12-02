@@ -1,7 +1,7 @@
 module.exports = {
   useLocation: () => {
-    return ({
-      pathname: "/mock-path"
-    })
-  }
+    return {
+      pathname: '/mock-path',
+    }
+  },
 }

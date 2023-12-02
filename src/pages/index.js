@@ -24,10 +24,7 @@ export default function Index() {
         <meta name="og:title" content="Alldrit Tech | Make your dream a reality" />
       </Helmet>
       <div className="landing-container" data-testid="landing-container">
-        <section
-          className="landing"
-          style={{ background: `radial-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0)), url(/images/stars.jpeg)` }}
-        >
+        <section className="landing" style={{ background: `radial-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0)), url(/images/stars.jpeg)` }}>
           <h1 className="title teal-glow">Alldrit Tech</h1>
           <p className="subtitle  blue-glow">Making Dreams Reality</p>
           <a href="#overview">
