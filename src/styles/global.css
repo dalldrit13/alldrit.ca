@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=VT323&display=swap");
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -26,7 +26,7 @@ a {
   width: fit-content;
 }
 
-p { 
+p {
   line-height: 1.8;
 }
 
@@ -48,7 +48,7 @@ button {
   image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
   image-rendering: crisp-edges;
   -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
-  
+
   border-style: solid;
   border-radius: 50%;
   border-width: 15px;
@@ -117,7 +117,6 @@ button:active {
 .scrolled .rocket {
   bottom: 30px;
 }
-
 
 .sidebyside {
   display: flex;
@@ -195,7 +194,7 @@ button:active {
   }
   .sidebyside > img:active {
     transform: scale(1);
-  }  
+  }
   .reverse-stack {
     flex-direction: column-reverse;
   }
@@ -203,7 +202,6 @@ button:active {
     justify-content: center;
   }
 }
-
 
 @media (max-width: 600px) {
   .teal-glow {

@@ -22,7 +22,7 @@ export default function Projects() {
         <title>Alldrit Tech | Our Projects</title>
         <meta name="og:title" content="Alldrit Tech | Our Projects" />
       </Helmet>
-      <div className="landing-container">
+      <div className="landing-container" data-testid="projects-container">
         <div className="landing" style={{ background: `radial-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(/images/stars3.jpeg)` }}>
           <h1 className="title teal-glow">Projects</h1>
           <p className="subtitle blue-glow">See What We Can Do</p>
@@ -30,12 +30,12 @@ export default function Projects() {
             <img className="arrow" src="/images/arrow.png" style={{ width: 30 }} alt="Scroll down" />
           </a>
         </div>
-        <section id="project1" className="landing sidebyside">
+        <section id="project1" data-testid="projects-section1" className="landing sidebyside">
           <div>
             <h1 className="title">Afino</h1>
             <p className="subtitle">
-              Afino was co-founded by Devin Alldrit, owner of Alldrit Tech, and was acquired in 2022. It's main offering is a Slack app that helps
-              bridge the gap between in-office and remote team members.
+              Afino was co-founded by Devin Alldrit, owner of Alldrit Tech, and was acquired in 2022. It&apos;s main offering is a Slack app that
+              helps bridge the gap between in-office and remote team members.
             </p>
             <div className="chips">
               <a className="chip" href="https://afino.io" target="_blank" rel="noreferrer">
@@ -129,7 +129,7 @@ export default function Projects() {
           <section className="landing sidebyside">
             <div>
               <h1 className="title">BET99</h1>
-              <p className="subtitle">A simple landing page for BET99's affiliate program.</p>
+              <p className="subtitle">A simple landing page for BET99&apos;s affiliate program.</p>
               <div className="chips">
                 <a className="chip" href="https://bet99affiliates.com" target="_blank" rel="noreferrer">
                   bet99affiliates.com

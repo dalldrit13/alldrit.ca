@@ -19,7 +19,7 @@ export default function Contact() {
         <title>Alldrit Tech | Contact Us</title>
         <meta name="og:title" content="Alldrit Tech | Contact Us" />
       </Helmet>
-      <div className="landing-container">
+      <div className="landing-container" data-testid="contact-container">
         <div
           className="landing"
           style={{ background: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(/images/stars2.jpeg)`, height: 'calc(100vh - 50px)' }}
