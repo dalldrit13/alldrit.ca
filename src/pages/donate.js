@@ -18,6 +18,7 @@ export default function Donate() {
       <Helmet>
         <title>Alldrit Tech | Donate</title>
         <meta name="og:title" content="Alldrit Tech | Donate" />
+        <script async src="https://js.stripe.com/v3/buy-button.js" />
       </Helmet>
       <div className="landing-container" data-testid="donate-container">
         <div
@@ -31,11 +32,13 @@ export default function Donate() {
               npm packages
             </a>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <div style={{ marginTop: 35, display: 'flex', flexDirection: 'column', gap: 10, alignItems: 'flex-start' }}>
+              <div style={{ marginTop: 35, display: 'flex', flexDirection: 'column', gap: 10, alignItems: 'center' }}>
                 <p>e-transfer: Devin Alldrit donate@alldrit.ca</p>
-                <p>BTC: bc1qh7rjam39e3nay2u2rfq74tyaccfjh9rl55s0gm</p>
-                <p>ETH: 0x689A662fbF3d59c806d76E0F519EEC634Fb81b18</p>
-                <p>SOL: 8z41suyMDM3oJMpHyVvJKBvUQ6riVzk8U123Shqepsov</p>
+                <strong>OR</strong>
+                <stripe-buy-button
+                  buy-button-id="buy_btn_1P8DikELLYfBs7aHXatUz63M"
+                  publishable-key="pk_live_51Kv0leELLYfBs7aHXdIOJwd2pEC4vodIk4ToU7CAfF9OESWyu6zUWfJ8VQImWeosavGcldsfmD9yyY9GyQZVwsW300v6lGB8CQ"
+                ></stripe-buy-button>
               </div>
             </div>
           </div>
