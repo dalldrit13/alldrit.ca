@@ -15,7 +15,12 @@ export default function Index() {
   return (
     <Wrapper>
       <div className="landing-container" data-testid="404-container">
-        <div className="landing" style={{ background: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(/images/stars4.jpeg)` }}>
+        <div
+          className="landing"
+          style={{
+            background: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(/images/stars4.jpeg)`,
+          }}
+        >
           <div className="title teal-glow" data-testid="notfound-text">
             Page Not Found
           </div>

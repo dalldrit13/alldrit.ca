@@ -17,7 +17,10 @@ export default function Navbar() {
           <Link className={location.pathname.includes('/about') ? 'blue-glow' : ''} to="/about">
             About
           </Link>
-          <Link className={location.pathname.includes('/projects') ? 'blue-glow' : ''} to="/projects">
+          <Link
+            className={location.pathname.includes('/projects') ? 'blue-glow' : ''}
+            to="/projects"
+          >
             Projects
           </Link>
           <Link className={location.pathname.includes('/contact') ? 'blue-glow' : ''} to="/contact">

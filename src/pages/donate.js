@@ -20,19 +20,47 @@ export default function Donate() {
         <meta name="og:title" content="Alldrit Tech | Donate" />
         <script async src="https://js.stripe.com/v3/buy-button.js" />
       </Helmet>
-      <div className="landing-container" data-testid="donate-container">
+      <div
+        className="landing-container"
+        data-testid="donate-container"
+        style={{ minHeight: 'max(100%, 900px)' }}
+      >
         <div
           className="landing"
-          style={{ background: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(/images/stars2.jpeg)`, height: 'calc(100vh - 50px)' }}
+          style={{
+            background: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(/images/stars2.jpeg)`,
+            height: 'max(100vh, 1050px)',
+          }}
         >
           <h1 className="title teal-glow">Donate</h1>
-          <div className="subtitle" style={{ width: 'max(40vw, 300px)', borderRadius: 15, padding: 30, backgroundColor: '#0f0f0f' }}>
+          <div
+            className="subtitle"
+            style={{
+              width: 'max(40vw, 300px)',
+              borderRadius: 15,
+              padding: 30,
+              backgroundColor: '#0f0f0f',
+            }}
+          >
             Support development of our services such as our free to use&nbsp;
-            <a href="https://www.npmjs.com/~alld_tech" target="_blank" rel="noreferrer" style={{ textDecoration: 'underline' }}>
+            <a
+              href="https://www.npmjs.com/~alld_tech"
+              target="_blank"
+              rel="noreferrer"
+              style={{ textDecoration: 'underline' }}
+            >
               npm packages
             </a>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <div style={{ marginTop: 35, display: 'flex', flexDirection: 'column', gap: 10, alignItems: 'center' }}>
+              <div
+                style={{
+                  marginTop: 35,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: 10,
+                  alignItems: 'center',
+                }}
+              >
                 <p>e-transfer: Devin Alldrit donate@alldrit.ca</p>
                 <strong>OR</strong>
                 <stripe-buy-button
