@@ -42,6 +42,31 @@ export default function Projects() {
         </div>
         <section id="project1" data-testid="projects-section1" className="landing sidebyside">
           <div>
+            <h1 className="title">Task Beaver</h1>
+            <p className="subtitle">
+              Task Beaver is an in house project of Alldrit Technologies. It automates assigment of
+              internal help requests within organizations for quicker response times, greater
+              accountability, and improved tracking.
+            </p>
+            <div className="chips">
+              <a className="chip" href="https://taskbeaver.ca" target="_blank" rel="noreferrer">
+                taskbeaver.ca
+              </a>
+              <a
+                className="chip"
+                href="https://slack.com/apps/A06HKTPSSQM-taskbeaver?tab=more_info"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Slack Listing
+              </a>
+            </div>
+          </div>
+          <img src="/images/taskbeaver.png" alt="Task Beaver landing page" loading="lazy" />
+        </section>
+        <section className="landing sidebyside reverse-stack">
+          <img src="/images/afino.png" alt="Afino landing page" loading="lazy" />
+          <div>
             <h1 className="title">Afino</h1>
             <p className="subtitle">
               Afino was co-founded by Devin Alldrit, owner of Alldrit Tech, and was acquired in
@@ -62,11 +87,9 @@ export default function Projects() {
               </a>
             </div>
           </div>
-          <img src="/images/afino.png" alt="Afino landing page" loading="lazy" />
         </section>
         <div id="fardown">
-          <section className="landing sidebyside reverse-stack">
-            <img src="/images/sisterverse.gif" alt="Sisterverse Game Screenshot" loading="lazy" />
+          <section className="landing sidebyside">
             <div>
               <h1 className="title">Sisterverse</h1>
               <p className="subtitle">
@@ -88,8 +111,14 @@ export default function Projects() {
                 </a>
               </div>
             </div>
+            <img src="/images/sisterverse.gif" alt="Sisterverse Game Screenshot" loading="lazy" />
           </section>
-          <section className="landing sidebyside">
+          <section className="landing sidebyside reverse-stack">
+            <img
+              src="/images/sisterverse_game.png"
+              alt="Sisterverse Game Screenshot"
+              loading="lazy"
+            />
             <div>
               <h1 className="title">Sisterverse Game</h1>
               <p className="subtitle">
@@ -108,14 +137,8 @@ export default function Projects() {
                 </a>
               </div>
             </div>
-            <img
-              src="/images/sisterverse_game.png"
-              alt="Sisterverse Game Screenshot"
-              loading="lazy"
-            />
           </section>
-          <section className="landing sidebyside reverse-stack">
-            <img src="/images/uptrend.png" alt="UpTrend screenshot" loading="lazy" />
+          <section className="landing sidebyside">
             <div>
               <h1 className="title">UpTrend</h1>
               <p className="subtitle">
@@ -136,8 +159,10 @@ export default function Projects() {
                 </a>
               </div>
             </div>
+            <img src="/images/uptrend.png" alt="UpTrend screenshot" loading="lazy" />
           </section>
-          <section className="landing sidebyside">
+          <section className="landing sidebyside reverse-stack">
+            <img src="/images/netcv.png" alt="Codey landing page screenshot" loading="lazy" />
             <div>
               <h1 className="title">NetCV</h1>
               <p className="subtitle">
@@ -149,10 +174,8 @@ export default function Projects() {
                 </a>
               </div>
             </div>
-            <img src="/images/netcv.png" alt="Codey landing page screenshot" loading="lazy" />
           </section>
-          <section className="landing sidebyside reverse-stack">
-            <img src="/images/codey.png" alt="Codey landing page screenshot" loading="lazy" />
+          <section className="landing sidebyside">
             <div>
               <h1 className="title">Codey</h1>
               <p className="subtitle">
@@ -165,8 +188,10 @@ export default function Projects() {
                 </a>
               </div>
             </div>
+            <img src="/images/codey.png" alt="Codey landing page screenshot" loading="lazy" />
           </section>
-          <section className="landing sidebyside">
+          <section className="landing sidebyside reverse-stack">
+            <img src="/images/bet99.png" alt="Bet 99 affiliates site screenshot" loading="lazy" />
             <div>
               <h1 className="title">BET99</h1>
               <p className="subtitle">A simple landing page for BET99&apos;s affiliate program.</p>
@@ -181,10 +206,8 @@ export default function Projects() {
                 </a>
               </div>
             </div>
-            <img src="/images/bet99.png" alt="Bet 99 affiliates site screenshot" loading="lazy" />
           </section>
-          <section className="landing sidebyside reverse-stack">
-            <img src="/images/soldarity.gif" alt="Soldarity Coming Soon Page" loading="lazy" />
+          <section className="landing sidebyside">
             <div>
               <h1 className="title">Soldarity</h1>
               <p className="subtitle">
@@ -201,6 +224,7 @@ export default function Projects() {
                 </a>
               </div>
             </div>
+            <img src="/images/soldarity.gif" alt="Soldarity Coming Soon Page" loading="lazy" />
           </section>
           <section className="landing sidebyside">
             <div>
