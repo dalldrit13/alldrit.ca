@@ -30,32 +30,18 @@ p {
   line-height: 1.8;
 }
 
-a > button {
-  color: #121111;
-}
-
 button {
   position: relative;
   font-family: 'VT323', sans-serif;
   border: none;
-  background-color: #fff;
   font-size: 18px;
   padding: 5px 25px;
   cursor: pointer;
-  image-rendering: optimizeSpeed;
-  image-rendering: -moz-crisp-edges; /* Firefox */
-  image-rendering: -o-crisp-edges; /* Opera */
-  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
-  image-rendering: crisp-edges;
-  -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
-
-  border-style: solid;
-  border-radius: 50%;
-  border-width: 15px;
-  -moz-border-image: url(/btnpxl.png) 20 stretch;
-  -webkit-border-image: url(/btnpxl.png) 20 stretch;
-  -o-border-image: url(/btnpxl.png) 20 stretch;
-  border-image: url(/btnpxl.png) 10 stretch;
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0 0 3px #fff, 0 0 6px #473bf0, 0 0 9px #473bf0, 0 0 12px #473bf0;
+  border-radius: 25px;
+  padding: 10px 15px;
 }
 
 button:active {
@@ -142,6 +128,25 @@ button:active {
 }
 .sidebyside > img:active {
   transform: scale(1.8);
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.project-status {
+  border-radius: 10px;
+  padding: 5px 8px;
+}
+.project-status.active {
+  background-color: #2ed75e;
+}
+.project-status.inactive {
+  background-color: #eb4034;
 }
 
 .title {

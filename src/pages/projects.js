@@ -42,7 +42,10 @@ export default function Projects() {
         </div>
         <section id="project1" data-testid="projects-section1" className="landing sidebyside">
           <div>
-            <h1 className="title">Task Beaver</h1>
+            <div className="project-title">
+              <h1 className="title">Task Beaver</h1>
+              <div className="project-status active">Active</div>
+            </div>
             <p className="subtitle">
               Task Beaver is an in house project of Alldrit Technologies. It automates assigment of
               internal help requests within organizations for quicker response times, greater
@@ -52,14 +55,14 @@ export default function Projects() {
               <a className="chip" href="https://taskbeaver.ca" target="_blank" rel="noreferrer">
                 taskbeaver.ca
               </a>
-              <a
+              {/*<a
                 className="chip"
                 href="https://slack.com/apps/A06HKTPSSQM-taskbeaver?tab=more_info"
                 target="_blank"
                 rel="noreferrer"
               >
                 Slack Listing
-              </a>
+              </a>*/}
             </div>
           </div>
           <img src="/images/taskbeaver.png" alt="Task Beaver landing page" loading="lazy" />
@@ -67,7 +70,10 @@ export default function Projects() {
         <section className="landing sidebyside reverse-stack">
           <img src="/images/afino.png" alt="Afino landing page" loading="lazy" />
           <div>
-            <h1 className="title">Afino</h1>
+            <div className="project-title">
+              <h1 className="title">Afino</h1>
+              <div className="project-status active">Active</div>
+            </div>
             <p className="subtitle">
               Afino was co-founded by Devin Alldrit, owner of Alldrit Tech, and was acquired in
               2022. It&apos;s main offering is a Slack app that helps bridge the gap between
@@ -91,23 +97,23 @@ export default function Projects() {
         <div id="fardown">
           <section className="landing sidebyside">
             <div>
-              <h1 className="title">Sisterverse</h1>
+              <div className="project-title">
+                <h1 className="title">Sisterverse</h1>
+                <div className="project-status inactive">Inactive</div>
+              </div>
               <p className="subtitle">
                 The SolSisters is a popular female led NFT project on the Solana blockchain. The
                 Sisterverse is an interactive 3D platform for holders to show off their collection
                 and complete missions in the paired game.
               </p>
               <div className="chips">
-                <a className="chip" href="https://solsisters.xyz" target="_blank" rel="noreferrer">
-                  solsisters.xyz
-                </a>
                 <a
                   className="chip"
                   href="https://alldrit.ca/project/sisterverse"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  sisterverse.xyz
+                  sisterverse.xyz (Demo)
                 </a>
               </div>
             </div>
@@ -120,7 +126,10 @@ export default function Projects() {
               loading="lazy"
             />
             <div>
-              <h1 className="title">Sisterverse Game</h1>
+              <div className="project-title">
+                <h1 className="title">Sisterverse Game</h1>
+                <div className="project-status inactive">Inactive</div>
+              </div>
               <p className="subtitle">
                 A 16bit style, object avoidance game with 5 different worlds tied to the
                 Sisterverse. Players must hold a SolSister token in their wallet and can play as one
@@ -133,14 +142,17 @@ export default function Projects() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  game.sisterverse.xyz
+                  game.sisterverse.xyz (Demo)
                 </a>
               </div>
             </div>
           </section>
           <section className="landing sidebyside">
             <div>
-              <h1 className="title">UpTrend</h1>
+              <div className="project-title">
+                <h1 className="title">UpTrend</h1>
+                <div className="project-status active">Active</div>
+              </div>
               <p className="subtitle">
                 UpTrend is a platform for Social Media Content Creators to grow and promote
                 themselves, while simultaneously getting paid for sharing content.
@@ -164,27 +176,33 @@ export default function Projects() {
           <section className="landing sidebyside reverse-stack">
             <img src="/images/netcv.png" alt="Codey landing page screenshot" loading="lazy" />
             <div>
-              <h1 className="title">NetCV</h1>
+              <div className="project-title">
+                <h1 className="title">NetCV</h1>
+                <div className="project-status inactive">Inactive</div>
+              </div>
               <p className="subtitle">
                 The quickest way for UI/UX specialists to create a digital resume online!
               </p>
-              <div className="chips">
-                <a className="chip" href="https://netcv.io" target="_blank" rel="noreferrer">
-                  netcv.io
-                </a>
-              </div>
             </div>
           </section>
           <section className="landing sidebyside">
             <div>
-              <h1 className="title">Codey</h1>
+              <div className="project-title">
+                <h1 className="title">Codey</h1>
+                <div className="project-status inactive">Inactive</div>
+              </div>
               <p className="subtitle">
                 A platform for Social Media Content Creators to share all their promo codes and
                 affiliate links in one spot for their audience.
               </p>
               <div className="chips">
-                <a className="chip" href="https://thecodey.com" target="_blank" rel="noreferrer">
-                  thecodey.com
+                <a
+                  className="chip"
+                  href="https://codey-frontend-i6aq2sjt0-dalldrit13s-projects.vercel.app"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  thecodey.com (Demo)
                 </a>
               </div>
             </div>
@@ -193,7 +211,9 @@ export default function Projects() {
           <section className="landing sidebyside reverse-stack">
             <img src="/images/bet99.png" alt="Bet 99 affiliates site screenshot" loading="lazy" />
             <div>
-              <h1 className="title">BET99</h1>
+              <div className="project-title">
+                <h1 className="title">BET99</h1> <div className="project-status active">Active</div>
+              </div>
               <p className="subtitle">A simple landing page for BET99&apos;s affiliate program.</p>
               <div className="chips">
                 <a
@@ -209,7 +229,10 @@ export default function Projects() {
           </section>
           <section className="landing sidebyside">
             <div>
-              <h1 className="title">Soldarity</h1>
+              <div className="project-title">
+                <h1 className="title">Soldarity</h1>
+                <div className="project-status active">Active</div>
+              </div>
               <p className="subtitle">
                 Soldarity is an in house hobby project bringing a new spin to P2E NFT collections.
                 Each NFT will represent a playable character in our 16bit style game. Our in game
@@ -228,7 +251,10 @@ export default function Projects() {
           </section>
           <section className="landing sidebyside">
             <div>
-              <h1 className="title">QRQR</h1>
+              <div className="project-title">
+                <h1 className="title">QRQR</h1>
+                <div className="project-status active">Active</div>
+              </div>
               <p className="subtitle">
                 QRQR is a future in house project for allowing businesses to manage service
                 requests. Businesses will be able to create unique printable QR codes that customers
@@ -239,7 +265,10 @@ export default function Projects() {
           </section>
           <section className="landing sidebyside">
             <div>
-              <h1 className="title">Tümstone</h1>
+              <div className="project-title">
+                <h1 className="title">Tümstone</h1>
+                <div className="project-status active">Active</div>
+              </div>
               <p className="subtitle">
                 When we die what do we leave behind? Tombstones have been around for centuries but
                 in todays digital age we can do better. Tümstone is another future in house project
