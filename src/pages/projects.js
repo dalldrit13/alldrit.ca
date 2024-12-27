@@ -43,6 +43,27 @@ export default function Projects() {
         <section id="project1" data-testid="projects-section1" className="landing sidebyside">
           <div>
             <div className="project-title">
+              <h1 className="title">QRQR</h1>
+              <div className="project-status active">Active</div>
+            </div>
+            <p className="subtitle">
+              QRQR makes it effortless for businesses to manage facility maintenance requests from
+              patrons. With QRQR, businesses can easily generate custom QR codes that are displayed
+              in restrooms, break rooms, and other facility areas. Patrons can scan the QR code to
+              quickly submit requests for cleaning, re-stocking, or any other maintenance needs, all
+              through a simple online form.
+            </p>
+            <div className="chips">
+              <a className="chip" href="https://qrqr.ca" target="_blank" rel="noreferrer">
+                qrqr.ca
+              </a>
+            </div>
+          </div>
+          <img src="/images/qrqr.png" alt="QRQR landing page" loading="lazy" />
+        </section>
+        <section className="landing sidebyside reverse-stack">
+          <div>
+            <div className="project-title">
               <h1 className="title">Task Beaver</h1>
               <div className="project-status active">Active</div>
             </div>
@@ -67,7 +88,7 @@ export default function Projects() {
           </div>
           <img src="/images/taskbeaver.png" alt="Task Beaver landing page" loading="lazy" />
         </section>
-        <section className="landing sidebyside reverse-stack">
+        <section className="landing sidebyside">
           <img src="/images/afino.png" alt="Afino landing page" loading="lazy" />
           <div>
             <div className="project-title">
@@ -95,7 +116,7 @@ export default function Projects() {
           </div>
         </section>
         <div id="fardown">
-          <section className="landing sidebyside">
+          <section className="landing sidebyside reverse-stack">
             <div>
               <div className="project-title">
                 <h1 className="title">Sisterverse</h1>
@@ -119,7 +140,7 @@ export default function Projects() {
             </div>
             <img src="/images/sisterverse.gif" alt="Sisterverse Game Screenshot" loading="lazy" />
           </section>
-          <section className="landing sidebyside reverse-stack">
+          <section className="landing sidebyside">
             <img
               src="/images/sisterverse_game.png"
               alt="Sisterverse Game Screenshot"
@@ -147,7 +168,7 @@ export default function Projects() {
               </div>
             </div>
           </section>
-          <section className="landing sidebyside">
+          <section className="landing sidebyside reverse-stack">
             <div>
               <div className="project-title">
                 <h1 className="title">UpTrend</h1>
@@ -173,8 +194,8 @@ export default function Projects() {
             </div>
             <img src="/images/uptrend.png" alt="UpTrend screenshot" loading="lazy" />
           </section>
-          <section className="landing sidebyside reverse-stack">
-            <img src="/images/netcv.png" alt="Codey landing page screenshot" loading="lazy" />
+          <section className="landing sidebyside">
+            <img src="/images/netcv.png" alt="NetCV landing page screenshot" loading="lazy" />
             <div>
               <div className="project-title">
                 <h1 className="title">NetCV</h1>
@@ -185,7 +206,7 @@ export default function Projects() {
               </p>
             </div>
           </section>
-          <section className="landing sidebyside">
+          <section className="landing sidebyside reverse-stack">
             <div>
               <div className="project-title">
                 <h1 className="title">Codey</h1>
@@ -208,7 +229,7 @@ export default function Projects() {
             </div>
             <img src="/images/codey.png" alt="Codey landing page screenshot" loading="lazy" />
           </section>
-          <section className="landing sidebyside reverse-stack">
+          <section className="landing sidebyside">
             <img src="/images/bet99.png" alt="Bet 99 affiliates site screenshot" loading="lazy" />
             <div>
               <div className="project-title">
@@ -227,7 +248,7 @@ export default function Projects() {
               </div>
             </div>
           </section>
-          <section className="landing sidebyside">
+          <section className="landing sidebyside reverse-stack">
             <div>
               <div className="project-title">
                 <h1 className="title">Soldarity</h1>
@@ -248,20 +269,6 @@ export default function Projects() {
               </div>
             </div>
             <img src="/images/soldarity.gif" alt="Soldarity Coming Soon Page" loading="lazy" />
-          </section>
-          <section className="landing sidebyside">
-            <div>
-              <div className="project-title">
-                <h1 className="title">QRQR</h1>
-                <div className="project-status active">Active</div>
-              </div>
-              <p className="subtitle">
-                QRQR is a future in house project for allowing businesses to manage service
-                requests. Businesses will be able to create unique printable QR codes that customers
-                can scan to request service. The main target is facilities that might need
-                maintenance or restocking based on use (e.g. bathrooms).
-              </p>
-            </div>
           </section>
           <section className="landing sidebyside">
             <div>
