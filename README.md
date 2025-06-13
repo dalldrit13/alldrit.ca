@@ -20,4 +20,4 @@ Install dependencies using [pnpm](https://pnpm.io):
 pnpm install
 ```
 
-Run scripts via `pnpm` as well, for example `pnpm run dev`.
+Run scripts via `pnpm` as well, for example `pnpm dev`.

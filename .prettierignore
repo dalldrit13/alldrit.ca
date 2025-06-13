@@ -7,3 +7,4 @@ static
 example_projects
 .circleci
 .vscode
+pnpm-lock.yaml

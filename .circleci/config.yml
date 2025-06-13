@@ -22,7 +22,7 @@ jobs:
           command: pnpm install --ignore-scripts
       - run:
           name: Lint
-          command: pnpm run lint
+          command: pnpm lint
       - run:
           name: Run tests
           command: pnpm test

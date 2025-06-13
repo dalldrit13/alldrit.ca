@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-pnpm run lint:diff && pnpm run prettier:diff
+pnpm lint:diff && pnpm prettier:diff

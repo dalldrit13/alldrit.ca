@@ -43,6 +43,55 @@ export default function Projects() {
         <section id="project1" data-testid="projects-section1" className="landing sidebyside">
           <div>
             <div className="project-title">
+              <h1 className="title">Toodoo</h1>
+              <div className="project-status active">Active</div>
+            </div>
+            <p className="subtitle">
+              Toodoo is a beautifully simple to-do list app that helps you focus on one task at a
+              time. Inspired by the swipe gestures of dating apps, Toodoo turns your task list into
+              a satisfying, game-like experience that actually motivates you to get things done.
+            </p>
+            <div className="chips">
+              <a className="chip" href="https://toodoo.ca" target="_blank" rel="noreferrer">
+                toodoo.ca
+              </a>
+              <a
+                className="chip"
+                href="https://apps.apple.com/ca/app/toodoo-list/id6745438335"
+                target="_blank"
+                rel="noreferrer"
+              >
+                iOS App Store
+              </a>
+              <a className="chip" rel="noreferrer">
+                Android Coming Soon
+              </a>
+            </div>
+          </div>
+          <img src="/images/toodoo.png" alt="Toodoo feature page" loading="lazy" />
+        </section>
+        <section className="landing sidebyside reverse-stack">
+          <img src="/images/mailday.png" alt="Mailday logo" loading="lazy" />
+          <div>
+            <div className="project-title">
+              <h1 className="title">MailDay</h1>
+              <div className="project-status active">Active</div>
+            </div>
+            <p className="subtitle">
+              Mailday delivers a fully personalized email to your inbox every morning. Build your
+              perfect daily digest with drag-and-drop widgets like weather, stock updates,
+              calendars, birthdays, top news, and more—customized exactly how you want it.
+            </p>
+            <div className="chips">
+              <a className="chip" href="https://mailday.ca" target="_blank" rel="noreferrer">
+                mailday.ca
+              </a>
+            </div>
+          </div>
+        </section>
+        <section className="landing sidebyside">
+          <div>
+            <div className="project-title">
               <h1 className="title">QRQR</h1>
               <div className="project-status active">Active</div>
             </div>
