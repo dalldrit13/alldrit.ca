@@ -11,10 +11,9 @@ jobs:
           keys:
             - pnpm-packages-{{ checksum "pnpm-lock.yaml" }}
       - run:
-          name: Enable pnpm package manager
+          name: Install pnpm via Corepack
           command: |
-            corepack enable
-            corepack prepare pnpm@latest-10 --activate
+            corepack prepare pnpm@10 --activate
             pnpm config set store-dir .pnpm-store
       - run:
           name: Install Dependencies
