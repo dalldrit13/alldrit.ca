@@ -11,3 +11,13 @@ Alldrit Technologies is a Toronto based software development company creating cu
 </strong><br><br>
 
 Checkout some of our projects <a href="https://alldrit.ca/projects" target="_blank">HERE</a>
+
+## Development
+
+Install dependencies using [pnpm](https://pnpm.io):
+
+```bash
+pnpm install
+```
+
+Run scripts via `pnpm` as well, for example `pnpm dev`.

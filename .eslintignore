@@ -12,3 +12,5 @@ gatsby-browser.js
 gatsby-config.js
 __mocks__
 test/setup
+pnpm-lock.yaml
+.pnpm-store
