@@ -15,14 +15,17 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Setup pnpm
+          command: corepack enable pnpm
+      - run:
           name: Install deps
-          command: npm install --ignore-scripts
+          command: pnpm install --ignore-scripts
       - run:
           name: Lint
-          command: npm run lint
+          command: pnpm run lint
       - run:
           name: Run tests
-          command: npm test
+          command: pnpm test
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
