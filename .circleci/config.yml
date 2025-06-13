@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: Setup pnpm
-          command: corepack enable pnpm
+          command: npm install -g pnpm
       - run:
           name: Install deps
           command: pnpm install --ignore-scripts
