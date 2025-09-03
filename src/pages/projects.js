@@ -63,8 +63,13 @@ export default function Projects() {
               >
                 iOS App Store
               </a>
-              <a className="chip" rel="noreferrer">
-                Android Coming Soon
+              <a
+                className="chip"
+                href="https://play.google.com/store/apps/details?id=ca.alldrit.toodoo"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Google Play Store
               </a>
             </div>
           </div>
@@ -142,14 +147,14 @@ export default function Projects() {
           <div>
             <div className="project-title">
               <h1 className="title">Afino</h1>
-              <div className="project-status active">Active</div>
+              <div className="project-status inactive">Inactive</div>
             </div>
             <p className="subtitle">
               Afino was co-founded by Devin Alldrit, owner of Alldrit Tech, and was acquired in
               2022. It&apos;s main offering is a Slack app that helps bridge the gap between
               in-office and remote team members.
             </p>
-            <div className="chips">
+            {/*<div className="chips">
               <a className="chip" href="https://afino.io" target="_blank" rel="noreferrer">
                 afino.io
               </a>
@@ -161,7 +166,7 @@ export default function Projects() {
               >
                 Slack Listing
               </a>
-            </div>
+            </div>*/}
           </div>
         </section>
         <div id="fardown">
@@ -176,7 +181,7 @@ export default function Projects() {
                 Sisterverse is an interactive 3D platform for holders to show off their collection
                 and complete missions in the paired game.
               </p>
-              <div className="chips">
+              {/*<div className="chips">
                 <a
                   className="chip"
                   href="https://alldrit.ca/project/sisterverse"
@@ -185,7 +190,7 @@ export default function Projects() {
                 >
                   sisterverse.xyz (Demo)
                 </a>
-              </div>
+              </div>*/}
             </div>
             <img src="/images/sisterverse.gif" alt="Sisterverse Game Screenshot" loading="lazy" />
           </section>
@@ -205,7 +210,7 @@ export default function Projects() {
                 Sisterverse. Players must hold a SolSister token in their wallet and can play as one
                 of their SolSisters, earning boosts from different traits.
               </p>
-              <div className="chips">
+              {/*<div className="chips">
                 <a
                   className="chip"
                   href="https://alldrit.ca/project/sisterverse_game"
@@ -214,20 +219,20 @@ export default function Projects() {
                 >
                   game.sisterverse.xyz (Demo)
                 </a>
-              </div>
+              </div>*/}
             </div>
           </section>
           <section className="landing sidebyside reverse-stack">
             <div>
               <div className="project-title">
                 <h1 className="title">UpTrend</h1>
-                <div className="project-status active">Active</div>
+                <div className="project-status inactive">Inactive</div>
               </div>
               <p className="subtitle">
                 UpTrend is a platform for Social Media Content Creators to grow and promote
                 themselves, while simultaneously getting paid for sharing content.
               </p>
-              <div className="chips">
+              {/*<div className="chips">
                 <a className="chip" href="https://uptrendapp.io" target="_blank" rel="noreferrer">
                   uptrendapp.io
                 </a>
@@ -239,7 +244,7 @@ export default function Projects() {
                 >
                   beta.uptrendapp.io
                 </a>
-              </div>
+              </div>*/}
             </div>
             <img src="/images/uptrend.png" alt="UpTrend screenshot" loading="lazy" />
           </section>
@@ -265,7 +270,7 @@ export default function Projects() {
                 A platform for Social Media Content Creators to share all their promo codes and
                 affiliate links in one spot for their audience.
               </p>
-              <div className="chips">
+              {/*<div className="chips">
                 <a
                   className="chip"
                   href="https://codey-frontend-i6aq2sjt0-dalldrit13s-projects.vercel.app"
@@ -274,7 +279,7 @@ export default function Projects() {
                 >
                   thecodey.com (Demo)
                 </a>
-              </div>
+              </div>*/}
             </div>
             <img src="/images/codey.png" alt="Codey landing page screenshot" loading="lazy" />
           </section>
