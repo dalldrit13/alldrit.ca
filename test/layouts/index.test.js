@@ -6,7 +6,7 @@ describe('src/layouts/index.js', () => {
   const { getByTestId } = render(
     <Wrapper>
       <div data-testid="test-id">This should be here</div>
-    </Wrapper>
+    </Wrapper>,
   )
 
   it('renders children', () => {

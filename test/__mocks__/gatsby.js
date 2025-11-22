@@ -20,13 +20,13 @@ module.exports = {
       React.createElement('a', {
         ...rest,
         href: to,
-      })
+      }),
   ),
   Slice: jest.fn().mockImplementation(({ alias, ...rest }) =>
     React.createElement('div', {
       ...rest,
       'data-test-slice-alias': alias,
-    })
+    }),
   ),
   useStaticQuery: jest.fn(),
 }
