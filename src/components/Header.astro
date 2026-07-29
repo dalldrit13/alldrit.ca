@@ -1,9 +1,9 @@
 ---
 const pathname = Astro.url.pathname
 const links = [
-  { href: '/about/', label: 'About' },
-  { href: '/projects/', label: 'Projects' },
-  { href: '/contact/', label: 'Contact' },
+  { href: '/about/index.html', route: '/about/', label: 'About' },
+  { href: '/projects/index.html', route: '/projects/', label: 'Projects' },
+  { href: '/contact/index.html', route: '/contact/', label: 'Contact' },
 ]
 ---
 
@@ -29,7 +29,7 @@ const links = [
     <div class="nav-links" id="nav-links">
       {
         links.map(link => (
-          <a href={link.href} class:list={{ active: pathname.startsWith(link.href) }}>
+          <a href={link.href} class:list={{ active: pathname.startsWith(link.route) }}>
             {link.label}
           </a>
         ))

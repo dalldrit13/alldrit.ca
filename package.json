@@ -14,7 +14,7 @@
     "lint": "astro check && prettier --check .",
     "fmt": "prettier --write .",
     "clean": "astro clean",
-    "deploy": "astro build && aws s3 sync dist/ s3://alldrit --delete --exclude .DS_Store"
+    "deploy": "astro build && op plugin run -- aws s3 sync dist/ s3://alldrit --delete --exclude \"*.DS_Store\""
   },
   "license": "0BSD",
   "dependencies": {
