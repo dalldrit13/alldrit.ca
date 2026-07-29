@@ -1,0 +1,20 @@
+---
+interface Props {
+  eyebrow: string
+  title: string
+  description: string
+  image?: string
+}
+const { eyebrow, title, description, image = '/images/stars/stars3.jpeg' } = Astro.props
+---
+
+<section id="top" class="page-hero" style={`--hero-image: url(${image})`}>
+  <div class="orbit orbit-one" aria-hidden="true"></div>
+  <div class="orbit orbit-two" aria-hidden="true"></div>
+  <div class="shell page-hero-inner" data-reveal>
+    <span class="eyebrow">{eyebrow}</span>
+    <h1 set:html={title} />
+    <p>{description}</p>
+  </div>
+  <a class="scroll-cue" href="#content"><span>Scroll to explore</span><i>↓</i></a>
+</section>

@@ -9,3 +9,5 @@ example_projects
 .vscode
 pnpm-lock.yaml
 .pnpm-store
+dist
+.astro/

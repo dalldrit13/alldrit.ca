@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+---
+
+<BaseLayout>
+  <section id="top" class="hero">
+    <div class="shell hero-content" data-reveal>
+      <span class="eyebrow">Independent software studio · Toronto</span>
+      <h1>Ideas into<br /><em>orbit.</em></h1>
+      <p class="hero-lede">We design and build focused digital products that feel effortless, move quickly, and hold up in the real world.</p>
+      <div class="hero-actions">
+        <a class="button" href="mailto:info@alldrit.ca">Start a project <span>↗</span></a>
+        <a class="button secondary" href="/projects/index.html">Explore our work</a>
+      </div>
+    </div>
+    <span class="hero-coordinates">43.6532° N · 79.3832° W · SIGNAL ACTIVE</span>
+  </section>
+
+  <div class="signal-strip" aria-hidden="true">
+    <div class="signal-track">
+      <span>Product engineering</span><span>Web & mobile</span><span>Automation</span><span>Technical strategy</span>
+      <span>Product engineering</span><span>Web & mobile</span><span>Automation</span><span>Technical strategy</span>
+    </div>
+  </div>
+
+  <section class="section" id="content">
+    <div class="shell">
+      <div class="section-heading" data-reveal>
+        <div><span class="eyebrow">What we do</span><h2>Small team.<br />Serious output.</h2></div>
+        <p>From first sketch to production launch, we turn complicated problems into clear, useful software—without the ceremony of a giant agency.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card" data-reveal><span class="service-number">01 / BUILD</span><h3>Product engineering</h3><p>Production-grade web and mobile experiences, built for speed, clarity, and long-term maintainability.</p></article>
+        <article class="service-card" data-reveal><span class="service-number">02 / SHIP</span><h3>Technical strategy</h3><p>Practical architecture and product guidance that turns the right idea into a realistic, high-leverage roadmap.</p></article>
+        <article class="service-card" data-reveal><span class="service-number">03 / SCALE</span><h3>Automation & systems</h3><p>Custom internal tools and integrations that remove busywork and let your team focus on what matters.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <div class="feature-project" data-reveal>
+        <div class="feature-project-image"><img src="/images/project/toodoo.png" alt="Toodoo task app interface" loading="lazy" /></div>
+        <div class="feature-project-copy">
+          <span class="eyebrow">Featured launch</span>
+          <h2>Toodoo</h2>
+          <p>A beautifully simple task app that turns an overwhelming list into one clear next move.</p>
+          <a class="button secondary" href="/projects/index.html">View selected work →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell cta-panel" data-reveal>
+      <div><span class="eyebrow">Open channel</span><h2>Have an idea worth building?</h2></div>
+      <a class="button" href="mailto:info@alldrit.ca">Tell us about it ↗</a>
+    </div>
+  </section>
+</BaseLayout>

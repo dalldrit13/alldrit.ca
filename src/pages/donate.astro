@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import PageHero from '../components/PageHero.astro'
+---
+
+<BaseLayout
+  title="Donate — Alldrit Technologies"
+  description="Support Alldrit Technologies' free and open software work."
+>
+  <script is:inline async src="https://js.stripe.com/v3/buy-button.js"></script>
+  <PageHero
+    eyebrow="Support the work"
+    title="Fuel the next<br /><em>experiment.</em>"
+    description="Help us keep useful tools, open packages, and curious side projects moving forward."
+    image="/images/stars/stars2.jpeg"
+  />
+  <section class="section" id="content">
+    <div class="shell donate-card" data-reveal>
+      <span class="eyebrow">Thank you</span>
+      <h2>Keep good software in orbit.</h2>
+      <p>
+        Your support helps fund free-to-use services and our <a
+          href="https://www.npmjs.com/~alld_tech"
+          target="_blank"
+          rel="noreferrer"
+          style="color: var(--cyan); text-decoration: underline;">open npm packages</a
+        >.
+      </p>
+      <div class="donate-options">
+        <p class="etransfer">E-transfer: <strong>Devin Alldrit · donate@alldrit.ca</strong></p>
+        <span class="eyebrow">or pay by card</span>
+        <stripe-buy-button
+          buy-button-id="buy_btn_1P8DikELLYfBs7aHXatUz63M"
+          publishable-key="pk_live_51Kv0leELLYfBs7aHXdIOJwd2pEC4vodIk4ToU7CAfF9OESWyu6zUWfJ8VQImWeosavGcldsfmD9yyY9GyQZVwsW300v6lGB8CQ"
+        ></stripe-buy-button>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
