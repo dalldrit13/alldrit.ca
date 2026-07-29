@@ -1,0 +1,51 @@
+---
+const pathname = Astro.url.pathname
+const links = [
+  { href: '/about/', label: 'About' },
+  { href: '/projects/', label: 'Projects' },
+  { href: '/contact/', label: 'Contact' },
+]
+---
+
+<header class="site-header" data-header>
+  <nav class="nav shell" aria-label="Primary navigation">
+    <a class="brand" href="/" aria-label="Alldrit Technologies home">
+      <span class="brand-mark">
+        <img
+          src="/images/logo_128.png"
+          srcset="/images/logo_128.png 128w, /images/logo_256.png 256w, /images/logo_512.png 512w"
+          sizes="(max-width: 600px) 40px, 48px"
+          alt=""
+        />
+      </span>
+      <span class="brand-name">ALLDRIT<span>TECH</span></span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span>
+      <span class="sr-only">Toggle menu</span>
+    </button>
+
+    <div class="nav-links" id="nav-links">
+      {
+        links.map(link => (
+          <a href={link.href} class:list={{ active: pathname.startsWith(link.href) }}>
+            {link.label}
+          </a>
+        ))
+      }
+      <a class="nav-cta" href="mailto:info@alldrit.ca">Start a project <span>↗</span></a>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle')
+  const navLinks = document.querySelector('.nav-links')
+  toggle?.addEventListener('click', () => {
+    const open = toggle.getAttribute('aria-expanded') === 'true'
+    toggle.setAttribute('aria-expanded', String(!open))
+    navLinks?.classList.toggle('is-open', !open)
+    document.body.classList.toggle('menu-open', !open)
+  })
+</script>

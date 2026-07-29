@@ -1,0 +1,163 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import PageHero from '../components/PageHero.astro'
+import ProjectCard from '../components/ProjectCard.astro'
+
+const projects = [
+  {
+    name: 'Toodoo',
+    status: 'Active' as const,
+    image: '/images/project/toodoo.png',
+    alt: 'Toodoo task app',
+    description:
+      'A beautifully simple to-do app that helps you focus on one task at a time. Swipe-first interactions turn an intimidating list into a satisfying, game-like flow.',
+    links: [
+      { label: 'toodoo.ca', href: 'https://toodoo.ca' },
+      { label: 'iOS', href: 'https://apps.apple.com/ca/app/toodoo-list/id6745438335' },
+      { label: 'Android', href: 'https://play.google.com/store/apps/details?id=ca.alldrit.toodoo' },
+    ],
+  },
+  {
+    name: 'MailDay',
+    status: 'Active' as const,
+    image: '/images/project/mailday.png',
+    alt: 'MailDay personalized email product',
+    description:
+      'A fully personalized morning email, assembled from drag-and-drop widgets for weather, markets, calendars, birthdays, news, and more.',
+    links: [{ label: 'mailday.ca', href: 'https://mailday.ca' }],
+  },
+  {
+    name: 'Penny Counter',
+    status: 'Active' as const,
+    image: '/images/project/pennycounter.png',
+    alt: 'Penny Counter financial tools homepage',
+    description:
+      'A collection of approachable financial tools for comparing options, modelling scenarios, and making smarter decisions about housing, investing, and vehicle costs.',
+    links: [{ label: 'pennycounter.ca', href: 'https://pennycounter.ca' }],
+  },
+  {
+    name: 'QRQR',
+    status: 'Active' as const,
+    image: '/images/project/qrqr.png',
+    alt: 'QRQR maintenance request platform',
+    description:
+      'A frictionless facility-maintenance request system. Businesses place custom QR codes where help is needed and patrons can submit a request in seconds.',
+    links: [{ label: 'qrqr.ca', href: 'https://qrqr.ca' }],
+  },
+  {
+    name: 'Task Beaver',
+    status: 'Active' as const,
+    image: '/images/project/taskbeaver.png',
+    alt: 'Task Beaver landing page',
+    description:
+      'An internal help-request system that automatically assigns work for faster responses, clearer accountability, and better operational insight.',
+    links: [{ label: 'taskbeaver.ca', href: 'https://taskbeaver.ca' }],
+  },
+  {
+    name: 'BET99 Affiliates',
+    status: 'Active' as const,
+    image: '/images/project/bet99.png',
+    alt: 'BET99 affiliates website',
+    description: 'A focused, high-performance landing experience for BET99’s affiliate program.',
+    links: [{ label: 'bet99affiliates.com', href: 'https://bet99affiliates.com' }],
+  },
+  {
+    name: 'Soldarity',
+    status: 'Concept' as const,
+    image: '/images/project/soldarity.gif',
+    alt: 'Soldarity pixel game world',
+    description:
+      'A 16-bit play-to-earn game concept where each collectible represents a playable character and in-game items evolve through play.',
+    links: [{ label: 'soldarity.com', href: 'https://soldarity.com' }],
+  },
+  {
+    name: 'Afino',
+    status: 'Archive' as const,
+    image: '/images/project/afino.png',
+    alt: 'Afino team collaboration app',
+    description:
+      'A Slack application designed to bridge the experience gap between in-office and remote team members. Co-founded by Devin Alldrit and acquired in 2022.',
+  },
+  {
+    name: 'Sisterverse',
+    status: 'Archive' as const,
+    image: '/images/project/sisterverse.gif',
+    alt: 'Interactive Sisterverse 3D world',
+    description:
+      'An interactive 3D platform for the SolSisters community to explore a shared universe, display their collection, and complete missions.',
+    links: [{ label: 'View demo', href: '/project/sisterverse/index.html' }],
+    note: 'Demo version only. Some functionality is unavailable.',
+  },
+  {
+    name: 'Sisterverse Game',
+    status: 'Archive' as const,
+    image: '/images/project/sisterverse_game.png',
+    alt: 'Sisterverse 16-bit game',
+    description:
+      'A five-world, 16-bit avoidance game with wallet-connected characters and trait-based boosts.',
+    links: [{ label: 'Play demo', href: '/project/sisterverse_game/index.html' }],
+    note: 'Demo version only. Some functionality is unavailable.',
+  },
+  {
+    name: 'UpTrend',
+    status: 'Archive' as const,
+    image: '/images/project/uptrend.png',
+    alt: 'UpTrend platform',
+    description:
+      'A platform for social content creators to grow their reach while earning from the content they share.',
+  },
+  {
+    name: 'NetCV',
+    status: 'Archive' as const,
+    image: '/images/project/netcv.png',
+    alt: 'NetCV portfolio builder',
+    description:
+      'A fast, design-led way for UI and UX specialists to publish a polished digital résumé.',
+  },
+  {
+    name: 'Codey',
+    status: 'Archive' as const,
+    image: '/images/project/codey.png',
+    alt: 'Codey creator platform',
+    description:
+      'One simple destination for creators to organize and share promotional codes and affiliate links with their audience.',
+  },
+  {
+    name: 'Tümstone',
+    status: 'Concept' as const,
+    description:
+      'A digital memorial concept for preserving stories, photos, videos, and private messages for future generations using permanent, cryptographically secured storage.',
+  },
+]
+---
+
+<BaseLayout
+  title="Projects — Alldrit Technologies"
+  description="Selected products and custom software built by Alldrit Technologies."
+>
+  <PageHero
+    eyebrow="Selected work"
+    title="Built for the<br /><em>real world.</em>"
+    description="Consumer products, business systems, and experimental worlds—each one designed to make a difficult thing feel simple."
+    image="/images/stars/stars3.jpeg"
+  />
+  <section class="section" id="content">
+    <div class="shell section-heading" data-reveal>
+      <div><span class="eyebrow">Mission log</span><h2>Projects in orbit.</h2></div>
+      <p>
+        Some are active products. Some were ambitious experiments. All of them taught us something
+        worth carrying into the next build.
+      </p>
+    </div>
+    <div class="shell project-list">
+      {projects.map((project, index) => <ProjectCard {...project} index={index + 1} />)}
+    </div>
+  </section>
+  <section class="section">
+    <div class="shell cta-panel" data-reveal>
+      <div>
+        <span class="eyebrow">Your project here</span><h2>What should we launch next?</h2>
+      </div><a class="button" href="mailto:info@alldrit.ca">Open a channel ↗</a>
+    </div>
+  </section>
+</BaseLayout>

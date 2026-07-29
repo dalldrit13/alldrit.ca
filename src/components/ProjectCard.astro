@@ -1,0 +1,44 @@
+---
+interface Props {
+  name: string
+  description: string
+  image?: string
+  alt?: string
+  status: 'Active' | 'Archive' | 'Concept'
+  links?: { label: string; href: string }[]
+  note?: string
+  index: number
+}
+const { name, description, image, alt = '', status, links = [], note, index } = Astro.props
+---
+
+<article class:list={['project-card', { 'no-image': !image }]} data-reveal>
+  {
+    image && (
+      <div class="project-visual">
+        <img src={image} alt={alt} loading="lazy" />
+        <span class="project-number">{String(index).padStart(2, '0')}</span>
+      </div>
+    )
+  }
+  <div class="project-copy">
+    <div class="project-heading">
+      <span class:list={['status', status.toLowerCase()]}><i></i>{status}</span>
+      {!image && <span class="project-number">{String(index).padStart(2, '0')}</span>}
+    </div>
+    <h2>{name}</h2>
+    <p>{description}</p>
+    {
+      links.length > 0 && (
+        <div class="project-links">
+          {links.map(link => (
+            <a href={link.href} target="_blank" rel="noreferrer">
+              {link.label} ↗
+            </a>
+          ))}
+        </div>
+      )
+    }
+    {note && <p class="project-note">{note}</p>}
+  </div>
+</article>

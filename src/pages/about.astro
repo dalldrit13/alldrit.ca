@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import PageHero from '../components/PageHero.astro'
+---
+
+<BaseLayout
+  title="About — Alldrit Technologies"
+  description="Meet the small Toronto software studio behind Alldrit Technologies."
+>
+  <PageHero
+    eyebrow="Our studio"
+    title="Software,<br /><em>simplified.</em>"
+    description="Independent by design, curious by nature, and focused on making useful things exceptionally well."
+    image="/images/stars/stars5.jpeg"
+  />
+  <section class="section" id="content">
+    <div class="shell story-grid">
+      <div class="story-sticky" data-reveal>
+        <span class="eyebrow">Built to build</span>
+        <h2>Big thinking without the big-agency drag.</h2>
+        <p>
+          Alldrit Technologies is a Toronto-based studio led by engineer and founder Devin Alldrit.
+          You work directly with the person designing the system and writing the code.
+        </p>
+      </div>
+      <div class="story-blocks">
+        <article class="story-block" data-reveal>
+          <span>01 / EXPERIENCE</span><h3>Founder perspective</h3><p>
+            Devin previously co-founded and served as CTO of Afino, a technology startup acquired in
+            2022. That means product decisions are shaped by what actually happens after launch.
+          </p>
+        </article>
+        <article class="story-block" data-reveal>
+          <span>02 / APPROACH</span><h3>Clarity over complexity</h3><p>
+            Great software should make the hard parts feel simple. We work in tight loops,
+            communicate plainly, and build only what earns its place.
+          </p>
+        </article>
+        <article class="story-block" data-reveal>
+          <span>03 / RANGE</span><h3>From concept to production</h3><p>
+            Consumer apps, business systems, interactive worlds, and useful automations—we bring the
+            same care to the first prototype and the final polish.
+          </p>
+        </article>
+      </div>
+    </div>
+    <div class="shell metrics" data-reveal>
+      <div class="metric"><strong>15+</strong><span>products and projects launched</span></div>
+      <div class="metric"><strong>01</strong><span>senior point of contact</span></div>
+      <div class="metric"><strong>∞</strong><span>curiosity for hard problems</span></div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="shell cta-panel" data-reveal>
+      <div><span class="eyebrow">Free consultation</span><h2>Let’s make the first move.</h2></div><a
+        class="button"
+        href="mailto:info@alldrit.ca">Start a conversation ↗</a
+      >
+    </div>
+  </section>
+</BaseLayout>

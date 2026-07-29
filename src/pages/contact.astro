@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import PageHero from '../components/PageHero.astro'
+---
+
+<BaseLayout
+  title="Contact — Alldrit Technologies"
+  description="Start a conversation with Alldrit Technologies about your next software project."
+>
+  <PageHero
+    eyebrow="Open channel"
+    title="Let’s build<br /><em>something good.</em>"
+    description="Tell us what you’re working on, where you’re stuck, or what you want to make possible."
+    image="/images/stars/stars2.jpeg"
+  />
+  <section class="section" id="content">
+    <div class="shell contact-layout">
+      <div class="contact-copy" data-reveal>
+        <span class="eyebrow">Say hello</span>
+        <h2>A simple first conversation.</h2>
+        <p>
+          Send over a short note about the problem, your rough timeline, and any useful context.
+          We’ll reply with honest thoughts and a practical next step.
+        </p>
+        <div class="contact-details">
+          <a href="mailto:info@alldrit.ca"><span>Email</span><strong>info@alldrit.ca ↗</strong></a>
+          <div><span>Based in</span><strong>Toronto, Canada</strong></div>
+          <div><span>Working with</span><strong>Teams everywhere</strong></div>
+        </div>
+      </div>
+      <aside class="contact-card" data-reveal>
+        <h3>Ready when you are.</h3>
+        <p>
+          No complicated intake form. No sales maze. Just send an email and you’ll hear directly
+          from the person who would build your product.
+        </p>
+        <a class="button" href="mailto:info@alldrit.ca?subject=New%20project%20inquiry"
+          >Compose email <span>↗</span></a
+        >
+        <div class="availability"><i></i><span>Currently accepting new conversations</span></div>
+      </aside>
+    </div>
+  </section>
+</BaseLayout>

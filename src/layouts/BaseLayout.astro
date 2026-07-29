@@ -1,0 +1,101 @@
+---
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import '../styles/global.css'
+
+interface Props {
+  title?: string
+  description?: string
+  image?: string
+}
+
+const {
+  title = 'Alldrit Technologies — Software, made human',
+  description = 'A Toronto software studio building focused digital products and custom software for ambitious teams.',
+  image = '/images/stars/stars.jpeg',
+} = Astro.props
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site)
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#050713" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(image, Astro.site)} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href={canonicalURL} />
+    <link rel="icon" type="image/png" sizes="128x128" href="/images/logo_128.png" />
+    <link rel="apple-touch-icon" sizes="256x256" href="/images/logo_256.png" />
+    <title>{title}</title>
+    <script is:inline>
+      document.documentElement.classList.add('has-js')
+    </script>
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-SD0KB8V7DW"></script>
+    <script is:inline src="/gtag.js"></script>
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="cursor-light" aria-hidden="true"></div>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <a class="to-top" href="#top" aria-label="Back to top">
+      <span>↑</span>
+    </a>
+    <Footer />
+    <script>
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      const root = document.documentElement
+      const header = document.querySelector('[data-header]')
+      const toTop = document.querySelector('.to-top')
+
+      const updateScroll = () => {
+        const scrolled = window.scrollY > 24
+        header?.classList.toggle('is-scrolled', scrolled)
+        toTop?.classList.toggle('is-visible', window.scrollY > window.innerHeight * 0.65)
+      }
+
+      updateScroll()
+      window.addEventListener('scroll', updateScroll, { passive: true })
+
+      if (!reducedMotion) {
+        window.addEventListener(
+          'pointermove',
+          event => {
+            root.style.setProperty('--pointer-x', `${event.clientX}px`)
+            root.style.setProperty('--pointer-y', `${event.clientY}px`)
+          },
+          { passive: true },
+        )
+
+        const observer = new IntersectionObserver(
+          entries => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-revealed')
+                observer.unobserve(entry.target)
+              }
+            })
+          },
+          { threshold: 0.12 },
+        )
+
+        document.querySelectorAll('[data-reveal]').forEach(element => observer.observe(element))
+      } else {
+        document
+          .querySelectorAll('[data-reveal]')
+          .forEach(element => element.classList.add('is-revealed'))
+      }
+    </script>
+  </body>
+</html>
