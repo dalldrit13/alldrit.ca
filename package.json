@@ -13,17 +13,17 @@
     "check": "astro check",
     "lint": "astro check && prettier --check .",
     "fmt": "prettier --write .",
-    "clean": "astro clean",
-    "deploy": "astro build && op plugin run -- aws s3 sync dist/ s3://alldrit --delete --exclude \"*.DS_Store\""
+    "clean": "astro clean"
   },
   "license": "0BSD",
   "dependencies": {
     "astro": "7.1.5"
   },
   "devDependencies": {
-    "@astrojs/check": "latest",
+    "@astrojs/check": "0.9.10",
     "prettier": "3.9.6",
-    "prettier-plugin-astro": "latest",
-    "typescript": "6.0.3"
+    "prettier-plugin-astro": "0.14.1",
+    "typescript": "6.0.3",
+    "wrangler": "4.122.0"
   }
 }
