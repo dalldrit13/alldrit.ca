@@ -1,0 +1,12 @@
+{
+  "name": "alldrit-ca",
+  "compatibility_date": "2026-08-13",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page",
+  },
+  "send_metrics": false,
+  "dependencies_instrumentation": {
+    "enabled": false,
+  },
+}
