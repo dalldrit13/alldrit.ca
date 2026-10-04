@@ -5,6 +5,18 @@ import ProjectCard from '../components/ProjectCard.astro'
 
 const projects = [
   {
+    name: 'Member Cards',
+    status: 'Active' as const,
+    image: '/images/project/membercards.png',
+    alt: 'Member Cards loyalty and membership card app',
+    description:
+      'A simple app that keeps your loyalty and membership cards ready to scan. No accounts required, and everything stays on your device.',
+    links: [
+      { label: 'membercards.ca', href: 'https://membercards.ca' },
+      { label: 'iOS', href: 'https://apps.apple.com/ca/app/member-cards-app/id6817871646' },
+    ],
+  },
+  {
     name: 'Toodoo',
     status: 'Active' as const,
     image: '/images/project/toodoo.png',
