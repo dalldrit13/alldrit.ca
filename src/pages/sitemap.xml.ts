@@ -1,10 +1,4 @@
-const pages = [
-  '',
-  'about/index.html',
-  'projects/index.html',
-  'contact/index.html',
-  'donate/index.html',
-]
+const pages = ['', 'about/', 'projects/', 'contact/', 'donate/']
 
 export function GET() {
   const urls = pages.map(path => `<url><loc>https://alldrit.ca/${path}</loc></url>`).join('')
