@@ -7,18 +7,18 @@ interface Props {
   title?: string
   description?: string
   image?: string
+  noindex?: boolean
 }
 
 const {
   title = 'Alldrit Technologies — Software, made human',
   description = 'A Toronto software studio building focused digital products and custom software for ambitious teams.',
   image = '/images/stars/stars.jpeg',
+  noindex = false,
 } = Astro.props
 
-const canonicalPath =
-  Astro.url.pathname !== '/' && Astro.url.pathname.endsWith('/')
-    ? `${Astro.url.pathname}index.html`
-    : Astro.url.pathname
+// Cloudflare serves directory pages at /about/ and 307s /about/index.html back, so canonicals must not use index.html
+const canonicalPath = Astro.url.pathname.replace(/\/index\.html$/, '/')
 const canonicalURL = new URL(canonicalPath, Astro.site)
 ---
 
@@ -36,7 +36,8 @@ const canonicalURL = new URL(canonicalPath, Astro.site)
     <meta property="og:image" content={new URL(image, Astro.site)} />
     <meta property="og:url" content={canonicalURL} />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="canonical" href={canonicalURL} />
+    {noindex && <meta name="robots" content="noindex" />}
+    {!noindex && <link rel="canonical" href={canonicalURL} />}
     <link rel="icon" type="image/png" sizes="128x128" href="/images/logo_128.png" />
     <link rel="apple-touch-icon" sizes="256x256" href="/images/logo_256.png" />
     <title>{title}</title>
