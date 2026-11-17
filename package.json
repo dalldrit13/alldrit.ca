@@ -2,6 +2,7 @@
   "name": "alldrit.ca",
   "version": "2.0.0",
   "private": true,
+  "packageManager": "pnpm@12.21.0",
   "description": "Alldrit Technologies website",
   "author": "Devin Alldrit <devin@alldrit.ca>",
   "type": "module",
