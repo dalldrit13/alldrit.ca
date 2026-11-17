@@ -4,10 +4,15 @@ The website for Alldrit Technologies, built with [Astro](https://astro.build/) a
 
 ## Development
 
+Node and pnpm versions are declared in `mise.toml`. Install them with [mise](https://mise.jdx.dev/), then install dependencies:
+
 ```bash
+mise install
 pnpm install
 pnpm dev
 ```
+
+Workers Builds does not read `mise.toml`. It takes Node from `.node-version` and pnpm from the `packageManager` field in `package.json`. Those values must match `mise.toml`.
 
 Astro serves the site locally at `http://localhost:4321`.
 
